@@ -5,4 +5,6 @@ Tasks:
 
 1. Shopify API MCP servers
 2. Data processors for 1688
-3. Vercel Storefront MCP 
+3. Vercel Storefront MCP
+
+Key: coding agent 
