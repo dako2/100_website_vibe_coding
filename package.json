@@ -1,0 +1,23 @@
+{
+  "name": "brie-store-cli",
+  "version": "1.0.0",
+  "description": "CLI tool for managing products in the Brie Shopify store",
+  "main": "add-product.js",
+  "scripts": {
+    "add-product": "node add-product.js add",
+    "list-products": "node add-product.js list",
+    "help": "node add-product.js help"
+  },
+  "keywords": [
+    "shopify",
+    "cli",
+    "products",
+    "brie",
+    "e-commerce"
+  ],
+  "author": "Brie Store",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
