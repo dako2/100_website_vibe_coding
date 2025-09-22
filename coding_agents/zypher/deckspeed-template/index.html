@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxYourMac - Mac Tips, Reviews & Tutorials</title>
+    <meta name="description" content="Discover the best Mac apps, tips, tricks, and tutorials to maximize your Mac experience. Expert reviews and guides for Mac users.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <a href="#" class="logo">
+                        <i class="fab fa-apple"></i>
+                        <span>MaxYourMac</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link">Reviews <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-link">Mac Apps</a>
+                            <a href="#" class="dropdown-link">Hardware</a>
+                            <a href="#" class="dropdown-link">Accessories</a>
+                            <a href="#" class="dropdown-link">Software</a>
+                        </div>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link">Tutorials <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-link">Beginner Guides</a>
+                            <a href="#" class="dropdown-link">Advanced Tips</a>
+                            <a href="#" class="dropdown-link">Troubleshooting</a>
+                            <a href="#" class="dropdown-link">Productivity</a>
+                        </div>
+                    </li>
+                    <li><a href="#" class="nav-link">News</a></li>
+                    <li><a href="#" class="nav-link">Best Apps</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="search-btn" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" placeholder="Search articles, reviews, and tutorials..." id="searchInput">
+                <button class="search-close" id="searchClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Maximize Your Mac Experience</h1>
+                <p>Discover the best Mac apps, expert tips, and in-depth tutorials to unlock your Mac's full potential. Stay updated with the latest Mac news and reviews.</p>
+                <div class="hero-buttons">
+                    <a href="#featured" class="btn btn-primary">Explore Articles</a>
+                    <a href="#newsletter" class="btn btn-secondary">Subscribe</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="mac-illustration">
+                    <div class="macbook">
+                        <div class="screen">
+                            <div class="dock">
+                                <div class="dock-item"></div>
+                                <div class="dock-item"></div>
+                                <div class="dock-item"></div>
+                                <div class="dock-item"></div>
+                                <div class="dock-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article" id="featured">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <div class="image-placeholder">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <span class="featured-badge">Featured</span>
+                </div>
+                <div class="featured-text">
+                    <div class="article-meta">
+                        <span class="category">Reviews</span>
+                        <span class="date">December 2024</span>
+                    </div>
+                    <h2>The Ultimate Guide to Mac Productivity Apps in 2024</h2>
+                    <p>Discover the top Mac applications that will transform your workflow and boost your productivity. From task management to creative tools, we've tested and reviewed the best apps available.</p>
+                    <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section class="articles-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Articles</h2>
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All</button>
+                    <button class="filter-tab" data-filter="reviews">Reviews</button>
+                    <button class="filter-tab" data-filter="tutorials">Tutorials</button>
+                    <button class="filter-tab" data-filter="news">News</button>
+                </div>
+            </div>
+            
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Articles will be loaded here -->
+            </div>
+            
+            <div class="load-more-section">
+                <button class="btn btn-outline" id="loadMoreBtn">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="apps">
+                    <div class="category-icon">
+                        <i class="fas fa-th"></i>
+                    </div>
+                    <h3>Mac Apps</h3>
+                    <p>Best app reviews and recommendations</p>
+                    <span class="article-count">24 articles</span>
+                </div>
+                
+                <div class="category-card" data-category="tips">
+                    <div class="category-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Tips & Tricks</h3>
+                    <p>Hidden features and productivity hacks</p>
+                    <span class="article-count">18 articles</span>
+                </div>
+                
+                <div class="category-card" data-category="hardware">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Hardware</h3>
+                    <p>Mac hardware reviews and comparisons</p>
+                    <span class="article-count">15 articles</span>
+                </div>
+                
+                <div class="category-card" data-category="troubleshooting">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Troubleshooting</h3>
+                    <p>Solutions to common Mac problems</p>
+                    <span class="article-count">12 articles</span>
+                </div>
+                
+                <div class="category-card" data-category="security">
+                    <div class="category-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security</h3>
+                    <p>Keep your Mac safe and secure</p>
+                    <span class="article-count">9 articles</span>
+                </div>
+                
+                <div class="category-card" data-category="customization">
+                    <div class="category-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Customization</h3>
+                    <p>Personalize your Mac experience</p>
+                    <span class="article-count">16 articles</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" id="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated</h2>
+                    <p>Get the latest Mac tips, app reviews, and tutorials delivered to your inbox weekly.</p>
+                </div>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" id="newsletterEmail">
+                    <button type="submit" class="btn btn-primary" id="subscribeBtn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fab fa-apple"></i>
+                        <span>MaxYourMac</span>
+                    </div>
+                    <p>Your trusted source for Mac tips, reviews, and tutorials. Helping Mac users get the most out of their devices since 2020.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="RSS"><i class="fas fa-rss"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">App Reviews</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Mac Tips</a></li>
+                        <li><a href="#">Hardware</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Popular Posts</h4>
+                    <ul>
+                        <li><a href="#">Best Mac Apps 2024</a></li>
+                        <li><a href="#">Mac Shortcuts Guide</a></li>
+                        <li><a href="#">Speed Up Your Mac</a></li>
+                        <li><a href="#">Mac Security Tips</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 MaxYourMac. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
