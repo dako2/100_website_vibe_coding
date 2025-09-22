@@ -8,3 +8,8 @@ Tasks:
 3. Vercel Storefront MCP
 
 Key: coding agent 
+
+Goal: 
+1. Turn the csv (exported from 1688) into a clean and simple single-product ecommerce website
+2. Integrate with shopify store backend automatically
+3. build a UI for this tool 
